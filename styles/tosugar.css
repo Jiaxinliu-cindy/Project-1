@@ -12,7 +12,7 @@ header ::after{content: '';
 
 nav{
     background-color: #82B1E9;
-    
+    text-align: center;
 }
 .nav{
 margin: 0 auto;}
