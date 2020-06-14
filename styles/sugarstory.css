@@ -46,3 +46,9 @@ nav a ::before{
 
 p{
     text-indent: 1cm;}
+
+    .bottom{text-decoration: none;
+        text-align: center;
+        margin:5px;
+        color:#113B6D;
+        }

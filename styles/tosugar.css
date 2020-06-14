@@ -43,3 +43,9 @@ nav a ::before{
     width: 100%;
     background-color: #82B1E9;
 }
+
+.bottom{text-decoration: none;
+    text-align: center;
+    margin:5px;
+    color:#113B6D;
+    }

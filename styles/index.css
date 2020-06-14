@@ -45,3 +45,9 @@ nav a ::before{
 }
 
 img.background{opacity:0.5}
+
+.bottom{text-decoration: none;
+text-align: center;
+margin:5px;
+color:#113B6D;
+}
