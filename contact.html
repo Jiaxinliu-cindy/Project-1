@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Mukta">
     <title>Contact Us</title>
     <style>
         h1{text-align: center;}
@@ -56,6 +59,87 @@ nav a ::before{
 
 p{
     text-indent: 1cm;}
+
+h2{text-align: center;}
+body {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#dotted {
+    border: 2px dotted;
+color:navy;}
+
+.first{
+    width:500px;
+}
+
+.second{width: 500px;
+height:200px;}
+
+.form{float: left;
+margin-left: 5%;}
+
+.icon{width:30px;
+height:30px;
+margin-left: 200px;
+padding: 30px;
+vertical-align: middle;}
+
+.short{
+    width:500px;
+color:navy;
+margin-left: auto;
+margin-right: auto;}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-left:50px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  margin-left: 200px;;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.socialmedia{margin-left: auto;
+margin-right: auto;}
+
+.submit{margin-left: 200px;
+    margin-top: 25px;
+width:100px;
+background-color:#82B1E9;
+color:#113B6D;}
+
+h1{color:#113B6D;
+font-size:50px;
+font-family: Mukta;}
+
+h2{color:#8F4C1A;
+font-family: Mukta;}
+
+body{font-family: Mukta;
+color:#113B6D;}
+
+
     </style>
 </head>
 
@@ -73,18 +157,33 @@ p{
         <li><a href="tosugar.html">To Sugar</a></li>
     </ul>
 </nav> </div> 
-    <h1>Got a Question?</h1>
-    <div class="one">
-        <caption>Your Information</caption>
-        <br> <br>
-        <label class="align">Name:</label
-        ><input type="text" placeholder="Enter your name here" /> <br /><br />
-        <label class="align">Email:</label
-        ><input type="text" placeholder="Enter your email here" />
-        <br><br>
-        <label class="comment">Please leave your feedback below:</label>
-        <input type="text"/>
-    </div>
+<h1>CONTACT</h1>
+<hr id="dotted">
+    <h2>We'd love to hear from you!</h2>
 
+    <div class="form">
+        <br> <br>
+        <input class="first" type="text" placeholder="Your Name" /> <br /><br />
+<input class="first" type="text" placeholder="Email" />
+        <br><br>
+        <input class="second" type="text" placeholder="Message"/>
+        <br><br>
+        <input class="submit" type="submit" value="Submit">
+    </div>
+<br><br>
+    <img class="icon" src="images/locationicon.png" alt="location" title="location">
+    San Clemente, California
+    <br>
+
+    <img class="icon" src="images/mailicon.png" alt="mail" title="mail">
+    cindyliu1998@126.com
+    <hr class="short">
+
+    <div class="socialmedia">
+    <a href="https://www.facebook.com/profile.php?id=100007026070077" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com/cindy.ljx/" class="fa fa-instagram"></a>
+    <a href="https://www.skype.com/en/" class="fa fa-skype"></a>
+</div>
+    <br><br><br><br><br><br><br>
 </body>
 </html>

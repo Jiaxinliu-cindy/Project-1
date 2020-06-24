@@ -1,64 +1,87 @@
-body{
-    background-color: white;
+body {
+  background-color: white;
 }
-img.logo{margin-left: auto;
-margin-right: auto;
-display: block;}
-
-header ::after{content: '';
-    display: table;
-    clear:both;
+img.logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
-nav{
-    background-color: #82B1E9;
-    text-align: center;
-}
-.nav{
-margin: 0 auto;}
-
-nav ul{margin: 0;
-padding: 0; 
-list-style: none;}
-
-nav li{
-    display: inline-block;
-    margin: 0 35px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    position: relative;
-    font-size: 20px;
+header ::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-nav ul li a{color:#113B6D;
-text-decoration: none;
-text-transform: uppercase;
+nav {
+  background-color: #82b1e9;
+  text-align: center;
 }
-nav ul li a :hover{color: #8F4C1A;}
-
-nav a ::before{
-    content: '';
-    display: block;
-    height: 5px;
-    width: 100%;
-    background-color: #82B1E9;
+.nav {
+  margin: 0 auto;
 }
 
-table img{
-    width: 200px;
-    height: 200px;
-}
-table {margin-left: auto;
-margin-right: auto;
-width:60%;
-padding-top: 20px;}
-
-td{
-    padding:25px;
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.bottom{text-decoration: none;
-    text-align: center;
-    margin:5px;
-    color:#113B6D;
-    }
+nav li {
+  display: inline-block;
+  margin: 0 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  font-size: 20px;
+}
+
+nav ul li a {
+  color: #113b6d;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav ul li a :hover {
+  color: #8f4c1a;
+}
+
+nav a ::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #82b1e9;
+}
+
+table img {
+  width: 200px;
+  height: 200px;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding-top: 20px;
+}
+
+td {
+  padding: 25px;
+}
+
+.bottom {
+  text-decoration: none;
+  text-align: center;
+  margin: 5px;
+  color: #113b6d;
+}
+
+body {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Mukta;
+}
+
+li:hover {
+  opacity: 0.7;
+}
