@@ -29,7 +29,10 @@
         <li><a href="tosugar.html">To Sugar</a></li>
     </ul>
 </nav> </div>
-
+<p>
+    <span id="days">()</span> days without you,<br />
+we miss you dearly. 
+  </p>
     <br>
     <img class="background" src="images/sugarbackground.jpg" alt="sugar" height="900">
 </div>
@@ -38,5 +41,19 @@
 <a href="sitemap.html">Site Map</a> |
 <a href="contact.html">Contact Us</a>
 </div>
+<script>
+    // I created this days counter that will also be used in my project
+    // I wanted to use this days counter to track how many days my dog have left us
+  // set beginning date
+  // set current date
+  // use the current date - the start date
+  // put the number of days in text
+  let startday = new Date("2020/4/29");
+  let now = new Date();
+  // convert into regular days,  because in java it is all calculated in milliseconds
+  let days = parseInt((now - startday) / (24 * 60 * 60 * 1000));
+  document.getElementById("days").style.fontSize = "50px";
+  document.getElementById("days").innerText = days;
+</script>
 </body>
 </html>

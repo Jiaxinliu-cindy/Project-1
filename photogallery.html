@@ -32,7 +32,7 @@
 
 <table>
     <tr>
-        <td><img src="images/1.jpg" alt="sugar" title="Sugar"></td>
+        <td><img id=img src="images/1.jpg" alt="sugar" title="Sugar"></td>
         <td><img src="images/2.jpg" alt="sugar" title="Sugar"></td>
         <td><img src="images/3.jpg" alt="sugar" title="Sugar"></td>
     </tr>
@@ -62,5 +62,41 @@
     <a href="sitemap.html">Site Map</a> |
     <a href="contact.html">Contact Us</a>
     </div>
+
+<script>
+function enlarge(i){
+let w = i.width;
+let h = i.height;
+h = h * 1.5;
+w = w * 1.5;
+i.style.width = w + "px";
+console.log(i.width);
+}
+function shrink(i) {
+let w = i.width;
+let h = i.height;
+// console.log(w);
+w = w / 1.5;
+h = h / 1.5;
+// console.log(w);
+// console.log(i.width);
+i.style.width = w + "px";
+}
+
+let images = document.querySelectorAll("img");
+
+for (let index = 0; index < images.length; index++) {
+const element = images[index];
+element.addEventListener("mouseover", function () {
+  enlarge(this);
+});
+
+element.addEventListener("mouseout", function () {
+  shrink(this);
+});
+}
+
+
+</script>
 </body>
 </html>

@@ -28,6 +28,7 @@
     </ul>
 </nav> </div> 
 <img class="gif" src="images/sugarginger.gif" alt="Sugar and Ginger" title="Sugar and Ginger">
+<p id="description"></p>
 <div class="text">
 <h1>
     Sugar's Story
@@ -113,5 +114,37 @@
     <a href="sitemap.html">Site Map</a> |
     <a href="contact.html">Contact Us</a>
     </div>
+
+<script>
+     const slides = [
+      "images/littlesugar.gif",
+      "images/sugarwithstairs.gif",
+      "images/sugarwithwine.gif",
+      "images/sugarandfood.gif",
+      "images/sugarginger.gif",
+      "images/sicksugar.gif",
+      "images/welcomehome.gif",
+      "images/sunsetsugar.gif",
+    ];
+    const textArray = ["Tiger 1", "Tiger 2", "Tiger 3", "Tiger 4"];
+    let i = 0;
+    const image = document.querySelector("img");
+    const description = document.getElementById("description");
+    function slideShow() {
+      if (i === slides.length) {
+        i = 0;
+      }
+      image.src = slides[i];
+      image.style.borderColor = colors[i];
+      description.innerText = textArray[i];
+
+      console.log(i);
+      i = i + 1;
+
+      setTimeout(slideShow, 1000);
+    }
+
+    document.querySelector("body").onload = slideShow;
+</script>
 </body>
 </html>
