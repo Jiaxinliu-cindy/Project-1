@@ -74,12 +74,7 @@ body {
   font-family: Mukta;
 }
 
-.gif {
-  float: right;
-  width: 30%;
-  margin: 30px;
-  padding: 5%;
-}
+
 
 h1 {
   text-align: center;
@@ -91,7 +86,14 @@ p {
   color: #1a2d7a;
 }
 
-#description {
+figcaption{
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+figure {
   float: right;
-  width: 100%;
+  margin: 20px;
+  padding-top: 5%;padding-left: 5%;padding-right: 5%;padding-bottom: 1%;
 }

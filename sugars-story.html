@@ -119,18 +119,15 @@
 
 <script>
      const slides = [
-      "images/littlesugar.gif",
       "images/sugarwithstairs.gif",
       "images/sugarwithwine.gif",
       "images/sugarandfood.gif",
       "images/sugarginger.gif",
-      "images/sicksugar.gif",
       "images/welcomehome.gif",
-      "images/sunsetsugar.gif",
     ];
-    const textArray = ["When she first came", "Climbing up the stairs like...", "Alcoholic dog", "Reaching for food like...", "Afternoon naps", "At the vets...","How I great my sister", "Watching sunset"];
+    const textArray = ["Climbing up the stairs like...", "Alcoholic Sugar", "Reaching for food like...", "Afternoon naps", "How I great my sister"];
     let i = 0;
-    const image = document.querySelectorALL(".gif");
+    const image = document.querySelector(".gif");
     const description = document.querySelector("figcaption");
     function slideShow() {
       if (i === slides.length) {
@@ -142,7 +139,7 @@
       console.log(i);
       i = i + 1;
 
-      setTimeout(slideShow, 1000);
+      setTimeout(slideShow, 4000);
     }
 
     document.querySelector("body").onload = slideShow;

@@ -77,3 +77,17 @@ p {
   text-align: center;
   font-size: 24px;
 }
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-family: Parisienne;
+  font-size: 40px;
+  font-weight: bold;
+}
+.container{
+  position: relative;
+  text-align: center;
+  color: white;
+}
