@@ -67,20 +67,22 @@
 function enlarge(i){
 let w = i.width;
 let h = i.height;
-h = h * 1.5;
-w = w * 1.5;
+h = h * 1.3;
+w = w * 1.3;
 i.style.width = w + "px";
+i.style.height = h + "px";
 console.log(i.width);
 }
 function shrink(i) {
 let w = i.width;
 let h = i.height;
 // console.log(w);
-w = w / 1.5;
-h = h / 1.5;
+w = w / 1.3;
+h = h / 1.3;
 // console.log(w);
 // console.log(i.width);
 i.style.width = w + "px";
+i.style.height = h + "px";
 }
 
 let images = document.querySelectorAll("img");

@@ -90,3 +90,8 @@ p {
   font-size: 18px;
   color: #1a2d7a;
 }
+
+#description {
+  float: right;
+  width: 100%;
+}
