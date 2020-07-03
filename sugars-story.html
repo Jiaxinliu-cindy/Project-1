@@ -29,6 +29,7 @@
 </nav> </div> 
 <figure>
 <img class="gif" src="images/sugarginger.gif" alt="Sugar and Ginger" title="Sugar and Ginger">
+<figcaption>Caption goes here</figcaption>
 </figure>
 <div class="text">
 <h1>
@@ -127,16 +128,15 @@
       "images/welcomehome.gif",
       "images/sunsetsugar.gif",
     ];
-    const textArray = ["Tiger 1", "Tiger 2", "Tiger 3", "Tiger 4"];
+    const textArray = ["When she first came", "Climbing up the stairs like...", "Alcoholic dog", "Reaching for food like...", "Afternoon naps", "At the vets...","How I great my sister", "Watching sunset"];
     let i = 0;
-    const image = document.querySelector("img");
-    const description = document.getElementById("description");
+    const image = document.querySelectorALL(".gif");
+    const description = document.querySelector("figcaption");
     function slideShow() {
       if (i === slides.length) {
         i = 0;
       }
       image.src = slides[i];
-      image.style.borderColor = colors[i];
       description.innerText = textArray[i];
 
       console.log(i);
