@@ -71,7 +71,7 @@ window.onload = function(){
 		cssString+= 'font-size: '+size+'rem;';
 		cssString+= 'transform:' ;
 			cssString+= 'translate('+location+'px,'+-3+'rem) ';
-			cssString+= 'rotate('+orientation+'deg) ';
+			// cssString+= 'rotate('+orientation+'deg) ';
 		cssString+= ';';
 		cssString+= 'animation: falling '+speed+'s linear;';
 		//-------------------------
@@ -98,7 +98,7 @@ window.onload = function(){
 
 		setTimeout(function() {
 			emojirain.removeChild(div);
-		}, (speed*2000));
+		}, (speed*3000));
 	},25);
 };
 </script>
