@@ -165,14 +165,14 @@ color:#113B6D;}
 <h1>CONTACT</h1>
 <hr id="dotted">
     <h2>We'd love to hear from you!</h2>
-
-    <div class="form"><form>
-        <input class="first" type="text" placeholder="Your Name" /> <br /><br />
-<input class="first" type="text" placeholder="Email" />
+    <form>
+    <div class="form">
+        <input class="first" name="name" type="text" placeholder="Your Name" /> <br /><br />
+<input class="first" name="email" type="text" placeholder="Email" />
         <br><br>
-        <input class="second" type="text" placeholder="Message"/>
+        <input class="second" name="message" type="text" placeholder="Message"/>
         <br><br>
-        <input class="submit" type="submit" value="Submit">
+        <input id= "submit" class="submit" type="submit" value="Submit">
     </div>
 <br><br>
     <img class="icon" src="images/locationicon.png" alt="location" title="location">
@@ -191,5 +191,18 @@ color:#113B6D;}
 </form>
 <br> <br>
     <br><br><br><br><br><br><br>
+    <script>
+        function validateForm() {
+        const myForm=document.querySelector("form");
+        const name = myForm['name'].value;
+        const email = myForm['email'].value;
+        const message = myForm['message'].value;
+        if (name.length===0 || email.length === 0 || message.length === 0) {
+          alert("Please enter all information above");
+        }}
+
+        document.querySelector("#submit").onclick = validateForm;
+
+    </script>
 </body>
 </html>
