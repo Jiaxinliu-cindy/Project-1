@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="manifest" href="/site.webmanifest">
 </head>
+<div class="emojirain">
 <body>
     <img class="logo" src="images/logo.png" alt="logo" height="200" > <!--center this logo-->
 </div>
@@ -53,7 +54,54 @@
     <a href="sitemap.html">Site Map</a> |
     <a href="contact.html">Contact Us</a>
     </div>
+</div>
+<script>
+    let emojiList = ["👼🏻"];
 
+    let emojiCount = emojiList.length;
+
+window.onload = function(){
+
+	let inter = setInterval(function(){
+		
+
+		//CSS for each raindrop
+		//-------------------------
+		cssString = 'position: absolute;';
+		cssString+= 'font-size: '+size+'rem;';
+		cssString+= 'transform:' ;
+			cssString+= 'translate('+location+'px,'+-3+'rem) ';
+			cssString+= 'rotate('+orientation+'deg) ';
+		cssString+= ';';
+		cssString+= 'animation: falling '+speed+'s linear;';
+		//-------------------------
+
+		//rain setup
+		//-------------------------
+		let emojirain = document.getElementById("emojirain");
+		let div = document.createElement("div");
+		
+		let divspinner = document.createElement("div");
+		let spinnerString = 'animation: spinning '+spin+'s linear infinite;';
+		if(direction)
+			spinnerString += 'animation-direction: reverse;';
+		divspinner.style.cssText = spinnerString;
+		//-------------------------
+		
+		//raindrop creation
+		//-------------------------
+		divspinner.innerHTML = (emojiList[emoji]);
+		div.style.cssText = cssString;
+		div.appendChild(divspinner);
+		emojirain.appendChild(div);
+		//-------------------------
+
+		setTimeout(function() {
+			emojirain.removeChild(div);
+		}, (speed*2000));
+	},25);
+};
+</script>
 </body>
 
 
